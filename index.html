@@ -1,0 +1,132 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+  <link rel="icon" href="image/icon.png" type="image/png" sizes="16x16">
+  <title>Time Travel</title>
+</head>
+
+<body>
+  <header>
+    <img src="3.png" class="sky lax" data-lax-translate-y="0 1, 400 -150">
+    <!-- <img src="snow.gif" class="gif lax" data-lax-translate-y="0 1, 400 -270"> -->
+    <img src="2.png" class="ground lax" data-lax-translate-y="0 1, 400 -260">
+    <img src="logo nav.png" class="logohead lax" data-lax-translate-y="0 1, 400 -260" data-lax-opacity="0 1, vh 0">
+    <img src="f.png" class="man lax" data-lax-translate-y="0 1, 400 -400">
+
+  </header>
+
+  <section>
+    <div class="black lax" data-lax-translate-y="0 1, 400 -300" data-lax-opacity="0 0, vh 5"></div>
+    <div class="container">
+      <div class="content lax" data-lax-translate-y="0 1, 400 -300" data-lax-opacity="0 0, vh 2">
+        <h3>What's Time travel ?</h3>
+        <p class="subtext">
+          Time traveller เป็นเว็บไซต์ ที่จะพาคุณท่องเวลาไปหาเหตุการณ์ในอดีตที่คุณกำลังสนใจ
+          หรือแนะนำเหตุการณ์สำคัญที่คุณควรค่าแก่การ ระรึกและจดจำ Time traveller
+          จะมอบประสบการณ์ในการท่องเวลาในแบบที่คุณไม่เคยพบเจอมาก่อน </p>
+      </div>
+      <div class="image lax" data-lax-translate-y="0 1, 400 -300" data-lax-opacity="0 0, vh 2">
+        <img src="image/redline.jpg " style="border-radius: 5px;">
+      </div>
+    </div>
+  </section>
+
+
+  <div class="content">
+    <h3> คุณพร้อมที่จะเริ่มต้นการท่องเวลาแล้วหรือยัง ?</h3><br>
+    <img class="earth" src="image/clockearth.png"><br>
+    <div class="btn-group"></div>
+      <button type="button" onclick="link()">Let's travel !</button>
+    </div>
+  </div>
+
+
+  <footer class="page-footer font-small stylish-color-dark pt-4">
+
+    <div class="container text-center text-md-left">
+      <div class="row">
+        <div class="col-md-4 mx-auto">
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4" style="color: gray;">Time Traveller</h5>
+          <p>คุณรู้หรือไม่ ว่าโลกของเรานั้นเกิดอะไรขึ้นมามากมาย
+            Time traveller จะพาคุณค้นหาเหตุการณ์สำคัญที่คุณกำลังสนใจ
+            และพาคุณดื่มดํ่าไปกับประสบการณ์การท่องเวลาในรูปแบบที่คุณอาจคาดไม่ถึง...</p>
+
+        </div>
+
+
+        <div class="col-md-2 mx-auto">
+
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4" style="color: gray;">หาอะไรอยู่</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="index.html" style="color: white;">Home</a>
+            </li>
+            <li>
+              <a href="quiz.html" style="color: white;">Travel</a>
+            </li>
+            <li>
+              <a href="Aboutus.html" style="color: white;">About us</a>
+            </li>
+          </ul>
+
+        </div>
+
+
+      </div>
+
+
+    </div>
+    <div class="footer-copyright text-center py-3">
+      <p style="color: gray;">© 2020 All rights reserved.</p>
+
+    </div>
+
+
+
+  </footer>
+
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
+  <script>
+    window.onload = function () {
+      lax.setup() // init
+
+      const updateLax = () => {
+        lax.update(window.scrollY)
+        window.requestAnimationFrame(updateLax)
+      }
+
+      window.requestAnimationFrame(updateLax)
+    }
+
+    function link() {
+      location.href = "quiz.html"
+    }
+
+  </script>
+</body>
+
+</html>

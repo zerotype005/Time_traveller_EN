@@ -1,0 +1,147 @@
+*{
+    box-sizing: border-box;
+    margin: 3rem;
+    
+}
+html { 
+    scroll-behavior: smooth;
+    scroll-snap-type: y proximity;
+  }
+body{
+    background-color: black;
+    font-family: 'Kanit', sans-serif;
+}
+h1{
+    color: white;
+    font-size: 10vw;
+    margin: 0;
+}
+h2{
+    color: white;
+    font-size: 5vw;
+}
+h3{
+    color: white;
+    font-size: 2vw;
+}
+h4{
+    color: white;
+    font-size: 2vh;
+}
+p{
+    color: white;
+}
+content{
+    position: relative;
+    width: 100%;
+}
+.tophead{
+    position: absolute;
+    top: 5%;
+    left: 3%;
+    padding: 0;
+}
+.head{
+    text-decoration: underline;
+}
+section{
+    margin: 5rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: start;
+    align-items: center;
+       
+}
+.imghead{
+    border-radius: 30px;
+    width: 50%;
+    margin: 5rem;
+    
+}
+img{
+    margin: 0;
+}
+.line{
+    position: relative;
+    width: 35%;
+    height: 5px;
+    border-radius: 50px;
+    background-color: white;
+}
+.timeline{
+    position: relative;
+    top: -5%;
+    padding: 0;
+}
+.imp{
+    position: relative;
+    top: -8%;
+    left: 1%;
+    padding: 0;
+}
+
+.slide {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 250vw;
+  }
+  .one {
+    background: black;
+  }
+
+
+  .wrapper {
+      transform: rotate(90deg) translateY(-100vh);
+      transform-origin: top left;
+    }
+    .outer-wrapper {
+        margin: 0;
+      width: 100vh;
+      height: 100vw;
+      transform: rotate(-90deg) translateX(-100vh);
+      transform-origin: top left;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      position: absolute;
+    }
+
+    .outer-wrapper {
+          scrollbar-width: none;
+          -ms-overflow-style: none;
+        }
+        ::-webkit-scrollbar {
+          display:none;
+        }
+.imgslide{
+    height: 100%;
+}
+button{
+    margin: 3;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+    transition: 0.5s;
+    width: 13rem;
+    background-color: #c74642;
+    color: white;
+}
+button:hover {
+    background-color: gray;
+}
+.but{
+    position: relative;
+    left: 10vw;
+}
+.hi{
+    border-radius: 30px;
+    width: 40vw;
+    margin-top: 2rem;
+}

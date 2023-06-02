@@ -1,0 +1,240 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylequiz.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="icon" href="image/icon.png" type="image/png" sizes="16x16">
+    <title>Time Travel</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-light">
+        <a class="navbar-brand" href="index.html"><img src="image/icon.png" class="d-inline-block align-top"
+          style="width: 100%;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>   
+      </nav>
+
+      <section id="sec1">
+        <div class="block">
+      <H2 class="animate__animated animate__bounce" id="qus">เราขอทราบชื่อผู้เดินทาง</H2>
+          <div class="item-form"> 
+              <input type="text" name="pname" placeholder="Name" class="textf1" id="textf">
+          <div class="btn-block"></div>
+            <button class="btnform" onclick="funcname()">ต่อไป</button>      
+        </div>
+      </div>
+      </section>
+
+      <section class="hide" id="sec1-2">
+        <div class="block">
+      <H2 class="animate__animated animate__bounce" id="qus">คุณมีช่วงเวลาในใจแล้วหรือไม่</H2>
+      <div class="item-form">
+        <button class="btnform"  id="btn1" onclick="funcyes()">มี</button>      
+        <button class="btnform" onclick="funcno()">ไม่มี</button>      
+
+      </div>      
+      </section>
+
+      <section class="hide" id="sec1-3">
+        <div class="block">
+      <H2 class="animate__animated animate__bounce" id="qus">ช่วงเวลาไหนที่คุณต้องการ</H2>
+      <div class="item-form">
+        <button class="btnform" onclick="an()">Ancient history<br>B.C. - 500</button>
+        <button class="btnform" onclick="med()">Medieval<br>500 – 1400</button>
+        <button class="btnform" onclick="re()">Renaissance<br>1400 – 1600</button>
+        <button class="btnform" onclick="ba()">Baroque<br>1600 - 1750</button>
+        <button class="btnform" onclick="roco()">Rococo<br>1699 – 1780</button>
+        <button class="btnform" onclick="ro()">Romanticism<br>1780 – 1850</button>
+        <button class="btnform" onclick="real()">Realism<br>1848 - 1900</button><br><br>
+        <button class="btnback" onclick="b8()">กลับ</button>     
+      </div>      
+      </section>
+
+
+      <section class="hide" id="sec1-1">
+        <div class="block">
+      <H2 class="animate__animated animate__backInLeft" id="qus">เราขอสอบถามข้อมูลต่างๆ เพื่อจะเลือกหมวดหมู่ของเหตุการณ์ที่ท่านสนใจได้อย่างถูกต้อง</H2>
+      </div>
+      </section>
+
+      <section class="hide" id="sec2">
+        <div class="block">
+          <H2 class="animate__animated animate__bounce" id="qus2">คุณนับถือเทพเจ้าหรือไม่ ?</H2>
+          <div class="item-form">
+          <button class="btnform"  id="btn1" onclick="funca1()">นับถือ</button>      
+          <button class="btnform" onclick="funca2()">ไม่นับถือ</button>      
+  
+        </div>      
+        </div>
+      </section>
+
+      <section class="hide" id="sec3">
+        <div class="block">
+          <H2 class="animate__animated animate__bounce" id="qus3">คุณสนใจอะไรมากที่สุด ?</H2>
+          <div class="item-form">
+          <button class="btnform" onclick="funca3()">การต่อสู้</button>      
+          <button class="btnform" onclick="funca4()">วัฒนธรรม</button><br><br>
+          <button class="btnback" onclick="b1()">กลับ</button>
+
+        </div>      
+        </div>
+      </section>
+
+      <section class="hide" id="sec4">
+        <div class="block">
+          <H2 class="animate__animated animate__bounce" id="qus4">คุณสนใจในด้านใด ?</H2>
+          <div class="item-form">
+          <button class="btnform" onclick="funca5()">การเมือง</button>      
+          <button class="btnform" onclick="funca6()">ศิลปะ</button>      
+          <button class="btnform" onclick="funca7()">เศรษฐกิจ</button><br><br>
+          <button class="btnback" onclick="b2()">กลับ</button>      
+        </div>      
+        </div>
+      </section>
+
+      <section class="hide" id="sec5">
+        <div class="block">
+          <H2 class="animate__animated animate__bounce" id="qus5">เลือกสังคมที่คุณอยากรู้ </H2>
+          <div class="item-form">
+            <button class="btnform" onclick="funca8()">สังคมอ่อนแอ</button>      
+            <button class="btnform" onclick="funca9()">สังคมที่กำลังมีการเปลี่ยนแปลง </button>      
+            <button class="btnform" onclick="funca10()">สังคมเสรีประชาธิปไตย </button><br><br>
+            <button class="btnback" onclick="b3()">กลับ</button>     
+        </div>      
+        </div>
+      </section>
+
+      <section class="hide" id="sec6">
+        <div class="block">
+          <H2 class="animate__animated animate__bounce" id="qus6">ศิลปะด้านใดที่คุณสนใจ </H2>
+          <div class="item-form">
+            <button class="btnform" onclick="funca11()">สถาปัตยกรรม </button>      
+            <button class="btnform" onclick="funca12()">ดนตรีและการแสดง  </button>      
+            <button class="btnform" onclick="funca13()">จิตรกรรม  </button>
+            <button class="btnform" onclick="funca14()">วรรณกรรม  </button><br><br>
+            <button class="btnback" onclick="b4()">กลับ</button>        
+        </div>      
+        </div>
+      </section>
+
+      <section class="hide" id="sec7">
+        <div class="block">
+          <H2 class="animate__animated animate__bounce" id="qus7">เลือกสถานะเศรษฐกิจที่สนใจ </H2>
+          <div class="item-form">
+            <button class="btnform" onclick="funca15()">เศรษฐกิจกำลังเจริญก้าวหน้า </button>      
+            <button class="btnform" onclick="funca16()">เศรษฐกิจอ่อนแอ </button><br><br>
+            <button class="btnback" onclick="b5()">กลับ</button>            
+        </div>      
+        </div>
+      </section>
+
+      <section class="hide" id="sec8">
+        <div class="block">
+          <H2 class="animate__animated animate__bounce" id="qus8">คุณชอบประเทศอะไร </H2>
+          <div class="item-form">
+            <button class="btnform" onclick="funca17()">อังกฤษ (ปฏิวัติอุตสาหกรรมครั้งที่ 1)</button>      
+            <button class="btnform" onclick="funca18()">อเมริกา (ปฏิวัติอุตสาหกรรมครั้งที่ 2) </button><br><br>
+            <button class="btnback" onclick="b6()">กลับ</button>           
+        </div>      
+        </div>
+      </section>
+
+      <section class="hide" id="sec9">
+        <div class="block">
+          <H2 class="animate__animated animate__bounce" id="qus9">เลือกเหตุการณ์ที่คุณสนใจ </H2>
+          <div class="item-form">
+            <button class="btnform" onclick="funca19()">เกิดสภาวะเงินเฟ้อ </button>      
+            <button class="btnform" onclick="funca20()">อาณาจักรโรมันล่มสลาย </button>
+            <button class="btnform" onclick="funca21()">เกิดการปฏิวัติยุโรป </button><br><br>
+            <button class="btnback" onclick="b7()">กลับ</button>             
+        </div>      
+        </div>
+      </section>
+
+      
+
+      <section class="hide" id="sec10">
+        <div class="block">
+          <H2>หมวดหมู่สำหรับการย้อนเวลาของคุณ</H2>
+          <h1 style="color: grey;">ยุคโบราณ (Ancient history)</h1>
+          <div class="item-form">
+          <button class="btnwar" onclick="an()">ย้อนเวลา !</button>
+        </div>
+        </div>
+      </section>
+
+      <section class="hide" id="sec11">
+        <div class="block">
+          <H2>หมวดหมู่สำหรับการย้อนเวลาของคุณ</H2>
+          <h1 style="color: #c74642;">ยุคกลาง (Medieval)</h1>
+          <div class="item-form">
+          <button class="btnwar" onclick="med()">ย้อนเวลา !</button>
+        </div>
+        </div>
+      </section>
+
+      <section class="hide" id="sec12">
+        <div class="block">
+          <H2>หมวดหมู่สำหรับการย้อนเวลาของคุณ</H2>
+          <h1 style="color: #e1bc5f;">ยุคฟื้นฟูศิลปวิทยา (Renaissance)</h1>
+          <div class="item-form">
+          <button class="btnwar" onclick="re()">ย้อนเวลา !</button>
+        </div>
+        </div>
+      </section>
+
+      <section class="hide" id="sec13">
+        <div class="block">
+          <H2>หมวดหมู่สำหรับการย้อนเวลาของคุณ</H2>
+          <h1 style="color: #df7138;">ยุคบาโรก (Baroque)</h1>
+          <div class="item-form">
+          <button class="btnwar" onclick="ba()">ย้อนเวลา !</button>
+        </div>
+        </div>
+      </section>
+
+      <section class="hide" id="sec14">
+        <div class="block">
+          <H2>หมวดหมู่สำหรับการย้อนเวลาของคุณ</H2>
+          <h1 style="color: #87b8f2;">ยุคโรโคโค (Rococo)</h1>
+          <div class="item-form">
+          <button class="btnwar" onclick="roco()">ย้อนเวลา !</button>
+        </div>
+        </div>
+      </section>
+
+      <section class="hide" id="sec15">
+        <div class="block">
+          <H2>หมวดหมู่สำหรับการย้อนเวลาของคุณ</H2>
+          <h1 style="color: pink;">ยุคจินตนิยม (Romanticism)</h1>
+          <div class="item-form">
+          <button class="btnwar" onclick="ro()">ย้อนเวลา !</button>
+        </div>
+        </div>
+      </section>
+
+      <section class="hide" id="sec16">
+        <div class="block">
+          <H2>หมวดหมู่สำหรับการย้อนเวลาของคุณ</H2>
+          <h1 style="color: #85915c;">ยุคสัจนิยม (Realism)</h1>
+          <div class="item-form">
+          <button class="btnwar" onclick="real()">ย้อนเวลา !</button>
+        </div>
+        </div>
+      </section>
+      <img src="bgq.png" class="bgq">
+
+
+
+
+<script src="quiz_script.js"> </script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
+</body>
+</html>
